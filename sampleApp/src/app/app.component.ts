@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { HttpModule } from '@angular/http';
 import 'rxjs/add/operator/map';
+import {Observable} from 'rxjs/Rx';
 // import 'rxjs/add/operator/toPromise';
 // import { map } from 'rxjs/operators';
 // import { Observable } from 'rxjs/Rx';
@@ -13,23 +14,27 @@ import 'rxjs/add/operator/map';
 })
 export class AppComponent {
   title = 'Angular 4';
-  private apiurl = 'http://162.17.231.117:1313/SpinoService.svc/getcountrylist';
-  data: any = {};
+  private apiurl = 'assets/file.json'; 
+  data: any = [];
 
-  constructor(private http: Http) {
-    console.log('hello web service');
-    this.getContract();
-    this.getData();
+  constructor(private http: Http) {   
+    this.getContract();  
   }
 
   getData() {
     return this.http.get(this.apiurl)
       .map((res: Response) => res.json())
+      
   }
+
+  public getjson(): Observable<any> {
+    return this.http.get(this.apiurl)
+                    .map((res:any) => res.json());
+
+}
   getContract() {
     this.getData().subscribe(data => {
-      console.log(data.GetCountryListResult);
-      this.data = data.GetCountryListResult;
+      this.data = data['People'];
     })
 
   }
