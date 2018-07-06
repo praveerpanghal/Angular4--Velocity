@@ -3,9 +3,6 @@ import { Http, Response } from '@angular/http';
 import { HttpModule } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs/Rx';
-// import 'rxjs/add/operator/toPromise';
-// import { map } from 'rxjs/operators';
-// import { Observable } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-root',
