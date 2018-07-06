@@ -1,21 +1,52 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <table border="1">
-    <th>Name</th>
-    <th>Rating</th>
-    <th> Description</th>
-    <tr *ngFor="let i of data">
-      <td>{{i.name}}</td>
-      <td>{{i.rating}}</td>
-      <td>{{i.Description}}</td>
-    </tr>
-   
-  </table>
-
+<div class="main">
+<div class="topBar">
+  <div class="searchbox">
  
+    <input class="searchtext " type="text" name="" id="" placeholder="Search">
+    <span class="icon-search"></span>
+    <span class="icon-close"></span>
+  </div>
+
+
+  <!-- <div class="profilecss "> -->
+
+    <div class="profilecss">
+      {{ name }}
+      <span class="icon-user"></span>
+      <span class="icon-down-indicator"></span>
+    </div>
+   
+    <!-- <img src="/assets/image/001.jpg" alt="image not found" width="50px" height="50px"> -->
+  <!-- </div> -->
+
 </div>
+<div class="bottom_left">
 
 
+  <ul class="leftaside" *ngFor="let i of data">
+    <li (click)="loadprofile(i.name,i.Description,i.Likes,i.Dislikes,i.img)"> {{i.name}}
+      <span class="arrow icon-right-indicator"></span>
+    </li>
+  </ul>
+  <!-- <button  (click)="loadprofile(i.name,i.Description,i.Likes,i.Dislikes)"> {{i.name}}</button >  -->
+
+
+</div>
+<div class="bottom-right">
+  <div style="float: left;">
+    <!-- <img class="userimage" src="./../assets/image/com_article.jpg" alt="" width="100px" height="100px"> -->
+    <img class="userimage" src={{image}}} alt="image not found" width="100px" height="100px">
+  </div>
+  <div class="message">SEND MESSAGE!</div>
+  <div class="description">{{desc}}</div>
+
+  <ul class="Likes">Likes
+    <li class="inner-like-dislike" *ngFor="let i of likes">{{i}}</li>
+
+  </ul>
+  <ul class="Dislikes">Dislikes
+    <li class="inner-like-dislike" *ngFor="let i of dislikes">{{i}}</li>
+  </ul>
+</div>
+</div>

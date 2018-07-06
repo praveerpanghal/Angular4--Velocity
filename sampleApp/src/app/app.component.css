@@ -1,0 +1,161 @@
+
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.topBar{
+    /* border:1px solid black; */
+    height: 60px; 
+    font-family:'sans-serif';
+    margin-bottom: 20px;
+}
+
+.searchbox {
+    float: left;
+    margin-top: 10px;
+    position: relative;
+
+}
+.icon-search{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+.icon-close{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 12px
+}
+.searchtext{
+    border-radius: 25px;
+    height: 30px;
+    width: 275px;
+    text-align: center;
+
+}
+.bottomBar {
+    clear: both;
+}
+.profilecss{
+    float: right;
+    margin-right: 30px;
+}
+.profilecss h1{
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.bottom_left{
+
+    /* border: 1px solid grey; */
+    /* height: 434px; */
+    width: 250px;
+    float: left;
+
+    margin-right: 50px;
+    /* margin-top: 20px; */
+   
+}
+
+.leftaside {
+    /* border-bottom: 1px solid black; */
+    /* border: 1px solid grey;
+    height: 55px;
+    padding-top: 20px; */
+    margin-bottom:-19px;
+    /* margin-top: -20px; */
+    list-style-type: none;
+   
+}
+.leftaside li{
+    cursor: pointer;
+    border: 1px solid grey;
+    height: 55px;
+    padding-top: 20px;
+    margin-top: -20px;
+    margin-left: -33px;
+    padding-left: 10px;
+}
+
+
+.message{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    width: 115px;
+    height: 20px;
+    float: left;     
+    border-radius: 5px;
+    font-size: 11px;
+    margin-left: 100px; 
+    padding-top: 15px;
+
+}
+.description{ 
+    clear: both;
+    /* font-weight: bolder; */
+    padding-top: 20px;
+    border: 1px solid black;
+    /* max-width: 550px; */
+}
+.arrow{
+   float: right;
+   margin-right: 5px;
+}
+.like-dislike{
+border: 1px solid black;
+height: 200px;
+width: 200px;
+float: left;
+margin-top: 50px;
+/* width: 100%; */
+
+}
+.Likes{
+  float: left;
+  display: flex;
+  flex-flow: row wrap; 
+  font-weight: bold;
+  margin-left: -40px;
+    
+}
+.Dislikes{
+    display: flex;
+    flex-flow: row wrap; 
+    font-weight: bold;
+    
+
+}
+.inner-like-dislike{
+    flex-basis: 100%; 
+    float: left;
+    font-weight: normal;
+    list-style-type: none;
+    border: 1px solid black;
+  
+
+}
+li:nth-child(even) { 
+    background-color: #ffffe6;
+ }
+ .icon-down-indicator{
+    font-size: 12px;
+    margin-left: 5px
+ }
+ .icon-user{
+     font-size: 40px;
+     margin-left: 20px;
+
+ }
+ .userimage{
+     border-radius: 10px;
+ }
+ .bottom-right{
+    float: left;
+    max-width: 800px;
+ }
+
+
+
