@@ -118,13 +118,16 @@ margin-top: 50px;
   display: flex;
   flex-flow: row wrap; 
   font-weight: bold;
-  margin-left: -40px;
+  margin-left: -8%;
+  max-width: 40%;
     
 }
 .Dislikes{
     display: flex;
     flex-flow: row wrap; 
     font-weight: bold;
+    margin-left: -8%;
+    max-width: 40%;
     
 
 }
@@ -154,7 +157,7 @@ li:nth-child(even) {
  }
  .bottom-right{
     float: left;
-    max-width: 800px;
+    max-width: 60%;
  }
 
 
