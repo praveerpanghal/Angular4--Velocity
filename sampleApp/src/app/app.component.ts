@@ -54,8 +54,6 @@ export class AppComponent {
     this.likes = likes;
     this.dislikes = dislikes;
     this.image =img;
-    // console.log(i);
-    // alert(i)
   }
 
 }

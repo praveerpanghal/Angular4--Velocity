@@ -167,3 +167,148 @@ margin-top: 50px;
  .heart-color{
     color: darkgoldenrod;
  }
+
+ @media screen and (max-width:1199px){
+    .container{
+        width: 100%
+    }
+    .searchbox {
+        width: 33%
+    }
+    .searchtext {
+        width: 33%
+    }
+    .profilecss {
+        width: 67%
+    }
+    .left-column {
+        width: 25%
+    }
+    .right-column {
+        width: 75%
+    }
+    .Likes-Dislikes {
+        width: 50%
+    }
+ }
+
+ 
+
+ /* for mobile phone iphone6/7/8 */
+ @media screen and (max-width:475px){
+    .container{
+        width: 100%;
+        font-size: 12px;
+    }
+    .searchbox {
+        width: 40%
+    }
+    .searchtext {
+        width: 100%
+    }
+    .profilecss {
+        width: 60%
+    }
+    .left-column {
+        width: 100%
+    }
+    .right-column {
+        width: 100%
+    }
+    .Likes-Dislikes {
+        width: 50%
+    }
+    .description{ 
+        height: 40px;
+
+    }
+    .right-column{
+        margin-top: 50px;
+    }
+    .leftaside li{
+        height: 25px;
+        padding-top: 12px;
+        margin-top: 18px;
+    }
+   
+    .topBar{   
+        margin-bottom: -12px;
+    }
+    .user-image{
+        width: 70px;
+        height: 70px;
+    }
+    .message{      
+        width: 80px;
+        height: 15px;       
+        font-size: 9px;       
+        padding-top: 10px;    
+    }
+    .icon-heart{
+        font-size: 20px;
+       
+    }
+    .heart-display{
+        margin-left: 175px;
+    }
+ }
+/* for tablet */
+ @media (min-width: 475px) and (max-width: 1200px) {
+    .container{
+        width: 100%;
+        font-size: 14px;
+    }
+    .left-column {
+        width: 20%
+    }
+    .right-column{
+        width: 76%;
+        margin-top: 20px;
+        margin-left: 10px;
+    } 
+    .searchbox {
+        width: 30%
+    }
+    .searchtext {
+        width: 100%
+    }
+    .profilecss {
+        width: 70%
+    }
+ 
+    .Likes-Dislikes {
+        width: 50%
+    }
+    .description{ 
+        height: 80px;
+
+    }  
+    .leftaside li{
+        height: 55px;
+        padding-top: 35px;
+        margin-top: 18px;
+    }
+   
+    .topBar{   
+        margin-bottom: -12px;
+    }
+    .user-image{
+        width: 70px;
+        height: 70px;
+    }
+    .message{      
+        width: 80px;
+        height: 15px;       
+        font-size: 9px;       
+        padding-top: 10px;    
+    }
+    .icon-heart{
+        font-size: 20px;
+       
+    }
+    .heart-display{
+        margin-left: 175px;
+    }
+    
+  }
+ 
