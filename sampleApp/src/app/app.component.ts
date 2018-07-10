@@ -4,6 +4,7 @@ import { HttpModule } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Observable } from 'rxjs/Rx';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

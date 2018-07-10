@@ -107,7 +107,7 @@
 .like-dislike{
 border: 1px solid black;
 height: 200px;
-width: 200px;
+/* width: 200px; */
 float: left;
 margin-top: 50px;
 /* width: 100%; */
@@ -118,8 +118,8 @@ margin-top: 50px;
   display: flex;
   flex-flow: row wrap; 
   font-weight: bold;
-  margin-left: -8%;
-  max-width: 40%;
+  margin-left: -3%;
+  /* max-width: 40%; */
     
 }
 .Dislikes{
@@ -127,7 +127,7 @@ margin-top: 50px;
     flex-flow: row wrap; 
     font-weight: bold;
     margin-left: -8%;
-    max-width: 40%;
+    /* max-width: 40%; */
     
 
 }
@@ -157,7 +157,7 @@ li:nth-child(even) {
  }
  .bottom-right{
     float: left;
-    max-width: 60%;
+    max-width: 80%;
  }
 
 
