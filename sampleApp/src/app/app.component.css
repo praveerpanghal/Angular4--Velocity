@@ -1,10 +1,11 @@
 
-.main{
+.container{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    width: 1200px;
+    margin: 0 auto;
 }
-.topBar{
-    /* border:1px solid black; */
+.topBar{    
     height: 60px; 
     font-family:'sans-serif';
     margin-bottom: 20px;
@@ -14,6 +15,7 @@
     float: left;
     margin-top: 10px;
     position: relative;
+    width: 350px;
 
 }
 .icon-search{
@@ -25,12 +27,12 @@
     position: absolute;
     right: 15px;
     top: 12px;
-    font-size: 12px
+    font-size: 12px;
 }
 .searchtext{
     border-radius: 25px;
     height: 30px;
-    width: 275px;
+    width: 350px;
     text-align: center;
 
 }
@@ -39,39 +41,35 @@
 }
 .profilecss{
     float: right;
-    margin-right: 30px;
+    margin-right: 0;
+    width: 750px;
+    
 }
 .profilecss h1{
     margin-right: 20px;
     margin-top: 10px;
 }
-.bottom_left{
-
-    /* border: 1px solid grey; */
-    /* height: 434px; */
-    width: 250px;
+.left-column{  
+    width: 300px;
     float: left;
-
-    margin-right: 50px;
-    /* margin-top: 20px; */
    
 }
+.right-column{
+    float: right;
+    width: 850px;
+    margin-right: 0;
+    margin-left: auto;
+ }
 
 .leftaside {
-    /* border-bottom: 1px solid black; */
-    /* border: 1px solid grey;
-    height: 55px;
-    padding-top: 20px; */
     margin-bottom:-19px;
-    /* margin-top: -20px; */
-    list-style-type: none;
-   
+    list-style-type: none;   
 }
 .leftaside li{
     cursor: pointer;
     border: 1px solid grey;
-    height: 55px;
-    padding-top: 20px;
+    height: 60px;
+    padding-top: 35px;
     margin-top: -20px;
     margin-left: -33px;
     padding-left: 10px;
@@ -95,10 +93,9 @@
 }
 .description{ 
     clear: both;
-    /* font-weight: bolder; */
     padding-top: 20px;
-    border: 1px solid black;
-    /* max-width: 550px; */
+    margin-bottom: 30px;
+    height: 60px;
 }
 .arrow{
    float: right;
@@ -107,58 +104,66 @@
 .like-dislike{
 border: 1px solid black;
 height: 200px;
-/* width: 200px; */
 float: left;
 margin-top: 50px;
-/* width: 100%; */
 
 }
-.Likes{
-  float: left;
-  display: flex;
-  flex-flow: row wrap; 
-  font-weight: bold;
-  margin-left: -3%;
-  /* max-width: 40%; */
-    
-}
-.Dislikes{
+
+.Likes-Dislikes{
+    float: left;
     display: flex;
-    flex-flow: row wrap; 
-    font-weight: bold;
-    margin-left: -8%;
-    /* max-width: 40%; */
-    
+    flex-flow: row wrap;
+    width: 400px;   
 
 }
 .inner-like-dislike{
     flex-basis: 100%; 
     float: left;
     font-weight: normal;
-    list-style-type: none;
     border: 1px solid black;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 10px;
   
 
 }
-li:nth-child(even) { 
+.inner-like-dislike:nth-child(even) { 
     background-color: #ffffe6;
  }
  .icon-down-indicator{
     font-size: 12px;
-    margin-left: 5px
+    margin-left: 5px;
+    float: right;
+    margin-top: 25px;
  }
  .icon-user{
      font-size: 40px;
      margin-left: 20px;
+     float: right;
 
  }
- .userimage{
+ .user-image{
      border-radius: 10px;
+     width: 100px;
+     height: 100px;
  }
- .bottom-right{
-    float: left;
-    max-width: 80%;
+ .user-name{
+     float: right;
+     margin-top: 20px;
  }
+ .right-top{
+     float: left;
+ }
+ .set-bold{
+     font-weight: bold;
+ }
+ .icon-heart{
 
-
-
+    font-size: 30px;
+ }
+ .heart-display{
+    margin-left: 200px;
+ }
+ .heart-color{
+    color: darkgoldenrod;
+ }

@@ -1,52 +1,59 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="main">
-<div class="topBar">
-  <div class="searchbox">
- 
-    <input class="searchtext " type="text" name="" id="" placeholder="Search">
-    <span class="icon-search"></span>
-    <span class="icon-close"></span>
-  </div>
+<div class="container">
+  <header class="topBar">
+    <div class="searchbox">
 
-
-  <!-- <div class="profilecss "> -->
-
-    <div class="profilecss">
-      {{ name }}
-      <span class="icon-user"></span>
-      <span class="icon-down-indicator"></span>
+      <input class="searchtext " type="text" name="" id="" placeholder="Search">
+      <span class="icon-search"></span>
+      <span class="icon-close"></span>
     </div>
-   
-    <!-- <img src="/assets/image/001.jpg" alt="image not found" width="50px" height="50px"> -->
-  <!-- </div> -->
+    <div class="profilecss">
+      <span class="icon-down-indicator"></span>
+      <span class="icon-user"></span>
+      <span class="user-name  set-bold">  {{ name }}</span>
+     
+  
+    </div>
+  </header>
 
-</div>
-<div class="bottom_left">
-
-
-  <ul class="leftaside" *ngFor="let i of data">
-    <li (click)="loadprofile(i.name,i.Description,i.Likes,i.Dislikes,i.img)"> {{i.name}}
-      <span class="arrow icon-right-indicator"></span>
-    </li>
-  </ul>
-  <!-- <button  (click)="loadprofile(i.name,i.Description,i.Likes,i.Dislikes)"> {{i.name}}</button >  -->
+  <aside class="left-column">
 
 
-</div>
-<div class="bottom-right">
-  <div style="float: left;">
-    <!-- <img class="userimage" src="./../assets/image/com_article.jpg" alt="" width="100px" height="100px"> -->
-    <img class="userimage" src={{image}}} alt="image not found" width="100px" height="100px">
+    <ul class="leftaside" *ngFor="let i of data">
+      <li (click)="loadprofile(i.name,i.Description,i.Likes,i.Dislikes,i.img)"> {{i.name}}
+        <span class="arrow icon-right-indicator"></span>
+      </li>
+    </ul>
+
+
+
+  </aside>
+
+  <section class="right-column">
+    <div class="right-top">   
+      <img class="user-image" src={{image}}} alt="image not found">
+    </div>
+    
+    <div class="message">SEND MESSAGE!</div><br><br><br>
+    <div class="heart-display">
+    <span class="icon-heart"></span>
+    <span class="icon-heart"></span>
+    <span class="icon-heart"></span>
+    <span class="icon-heart"></span>
+    <span class="icon-heart heart-color"></span>
+  
   </div>
-  <div class="message">SEND MESSAGE!</div>
-  <div class="description">{{desc}}</div>
 
-  <ul class="Likes">Likes
-    <li class="inner-like-dislike" *ngFor="let i of likes">{{i}}</li>
+    <div class="description">{{desc}}</div>
 
-  </ul>
-  <ul class="Dislikes">Dislikes
-    <li class="inner-like-dislike" *ngFor="let i of dislikes">{{i}}</li>
-  </ul>
-</div>
+    <div class="Likes-Dislikes">
+      <div class="inner-like-dislike set-bold" >Likes</div>
+      <div class="inner-like-dislike" *ngFor="let i of likes">{{i}}</div>
+
+    </div>
+    <div class="Likes-Dislikes">
+        <div class="inner-like-dislike set-bold" >Dislikes</div>
+      <div class="inner-like-dislike" *ngFor="let i of dislikes">{{i}}</div>
+    </div>
+  </section>
 </div>
