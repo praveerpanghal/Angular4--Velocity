@@ -79,7 +79,7 @@
 .message{
     text-align: center;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid grey;
     background-color: black;
     color: white;
     width: 115px;
@@ -102,7 +102,7 @@
    margin-right: 5px;
 }
 .like-dislike{
-border: 1px solid black;
+border: 1px solid grey;
 height: 200px;
 float: left;
 margin-top: 50px;
@@ -120,7 +120,7 @@ margin-top: 50px;
     flex-basis: 100%; 
     float: left;
     font-weight: normal;
-    border: 1px solid black;
+    border: 1px solid grey;
     height: 35px;
     padding-top: 15px;
     padding-left: 10px;
